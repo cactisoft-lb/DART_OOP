@@ -1,14 +1,17 @@
 class Human {
   // human properties => variables
-  String? name;
-  int? age;
-  String? status;
+  String  name;
+  int ?  age;
+  String ? status;
 
-  Human(String humanName, int humanAge, String humanStatus) {
-    name = humanName;
-    age = humanAge;
-    status = humanStatus;
-  }
+  //named variables 
+  Human({   required this.name,this.age,this.status} );
+
+  // Human(String name, int age, String status) {
+  //   this.name = name;
+  //   this.age = age;
+  //   this.status = status;
+  // }
 
   // human behaviours ( actions ) => functions
   void eat() {
